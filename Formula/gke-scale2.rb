@@ -7,16 +7,16 @@ class GkeScale2 < Formula
 
   if OS.mac?
     url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.3/gke-scale2_0.0.3_darwin_amd64.zip"
-    sha256 "e23e6182ea5c1297f9ab99f695a8d359c6a11929292f9295cb817849bf6f57e5"
+    sha256 "46e56e03a412bcbe21d4ff1d2d5304543fc7ce0374df599b0a1565415acfb4bb"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.3/gke-scale2_0.0.3_linux_amd64.zip"
-      sha256 "8eaba8d2c8cecbb291cef395e79a4020fba089ded667d13c298f225ef52f72cf"
+      sha256 "396114c3cc85675be6538cf13c6da3c216a2744da4aad1ff9f98c9091e08d63d"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.3/gke-scale2_0.0.3_linux_arm64.zip"
-        sha256 "399902ac4fa908e01b99273e2b67ccbabeeb1a60216b7c4d6016edd3256a077c"
+        sha256 "6654a9205216b03e5a869214b042edf840ae9f9e40c3f5226dc80c644d9f36ab"
       else
       end
     end
