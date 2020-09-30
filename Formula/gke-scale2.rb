@@ -2,21 +2,21 @@
 class GkeScale2 < Formula
   desc "gke-scale2 allow you to quickly scale k8s cluster in google cloud"
   homepage "https://github.com/BESTSELLER/gke-scale2"
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.4/gke-scale2_0.0.4_darwin_amd64.zip"
-    sha256 "8d6f43e65e78d0dd920e60b8324724987b188d969e5361d73d83e3d710a99e2f"
+    url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.5/gke-scale2_0.0.5_darwin_amd64.zip"
+    sha256 "4dec6aba5cd6e7031d3bcf7f9866a1c09710e3de678908dad17bb2162d96e528"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.4/gke-scale2_0.0.4_linux_amd64.zip"
-      sha256 "483f468756e68c29bc7ad57398b05343e3969cfc96cca4724eefa47b579438e7"
+      url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.5/gke-scale2_0.0.5_linux_amd64.zip"
+      sha256 "8dd7039159b064d5526a9931fa659276f2ccd081edd30173c0c7aa296ef0520b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.4/gke-scale2_0.0.4_linux_arm64.zip"
-        sha256 "42a848ee85f3d14fd704d5599ef816d84516485e468730e2df2dc8d9f542f778"
+        url "https://github.com/BESTSELLER/gke-scale2/releases/download/v0.0.5/gke-scale2_0.0.5_linux_arm64.zip"
+        sha256 "1445750e8827acfc5370464d8f2e478a4f24d35199012e2ce110f5f08eb45ea9"
       else
       end
     end
