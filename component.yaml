@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-tap
+  description: "homebrew-tap so we can install our tools using brew"
+  tags:
+    - golang
+    - macos
+    - brew
+    - development
+  annotations:
+    # This also supports bitbucket/xxx/yyy
+    github.com/project-slug:  BESTSELLER/homebrew-tap
+spec:
+  type: library
+  lifecycle: production
+  owner: engineering-services
+---
